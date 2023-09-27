@@ -7,23 +7,53 @@
 </head>
 <style>
     body {
-        background-color: darksalmon;
+        background-clip: url(All\ Kanna\ Noises.mp4);
     }
 
     h1 {
         background-color: rgba(88, 48, 48, 0.993);
         box-shadow: rgb(247, 247, 247) 1px 1px 1px 1px;
-        margin-left: -10px;
+        margin-left: -20px;
         margin-right: -15px;
         padding: 10px 10px 10px 10px;
+    }
+
+    #vid {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .kamui {
+        position: fixed;
+        margin-left: -8px;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
     }
 </style>
 
 <body>
-    <h1 style="font-family:forte;">Nyanpasu Yabure Kabure</h1>
-    <p>Nyan Nyanpasu~ <br>
-        Yabure kabure no yabu isha ga take yabu<br>
-        no naka e sutta kora sa yabu karabōni sutta kora sa <br>
-        yaburetaraburetāmotte sutta kora sa</p>
+    <video autoplay muted loop id="vid">
+        <source src="All Kanna Noises 2.mp4" type="video/mp4">
+    </video>
+    <div class="kamui">
+
+        <center><audio controls autoplay style="width: 500px; height: 30px;">
+                <source src="kanna.ogg" type="audio/ogg" ;>
+                <source src="kanna.mp3" type="audio/mpeg" ;>
+            </audio></center>
+        <h1 style="font-family:forte;">Nyanpasu Yabure Kabure</h1>
+        <p>Nyan Nyanpasu~ <br>
+            Yabure kabure no yabu isha ga take yabu<br>
+            no naka e sutta kora sa yabu karabōni sutta kora sa <br>
+            yaburetaraburetāmotte sutta kora sa</p>
+
+    </div>
 </body>
+
 </html>
